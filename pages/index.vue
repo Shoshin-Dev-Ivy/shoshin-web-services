@@ -81,8 +81,8 @@
     </div>
     <div class="text-center">
         <ul class="-mt-8">
-          <li class="text-2xl text-sky-700 dark:text-white">{{$t("Appli")}} / SaaS / API</li>
-          <li class="text-2xl text-sky-700 dark:text-white">{{$t("BDD")}} PostgreSQL</li>
+          <li class="text-2xl text-sky-700 dark:text-white">{{$t("Appli")}} </li>
+          <li class="text-2xl text-sky-700 dark:text-white">{{$t("BDD")}} </li>
         </ul>
     </div>
     <div class="flex" id="item-2">
@@ -104,6 +104,12 @@
               <Tooltip text="JavaScript">
                  <Icon name="devicon:javascript" class="size-16" />
               </Tooltip>
+              <Tooltip text="Angular">
+                 <Icon name="devicon:angular" class="size-16" />
+              </Tooltip>
+               <Tooltip text="Wordpress">
+                 <Icon name="devicon:wordpress" class="size-16" />
+              </Tooltip>
             </div>
           </div>
         </div>
@@ -118,7 +124,27 @@
               <Tooltip text="Python">
                 <Icon name="logos:python" class="size-16 mb-8" />
               </Tooltip>
-              <Icon name="logos:django" class="size-16" />
+              <Tooltip text="Django">
+                <Icon name="logos:django" class="size-16 mb-8" />
+              </Tooltip>
+              <Tooltip text="Symfony">
+                <Icon name="logos:symfony" class="size-16 mb-8" />
+              </Tooltip>
+              <Tooltip text="Php">
+                <Icon name="logos:php" class="size-16 mb-8" />
+              </Tooltip>
+              <Tooltip text="Docker">
+                <Icon name="logos:docker" class="size-16 mb-8" />
+              </Tooltip>
+              <Tooltip text="Nginx">
+                <Icon name="logos:nginx" class="size-16 mb-8" />
+              </Tooltip>
+              <Tooltip text="Prometheus">
+                <Icon name="logos:prometheus" class="size-16 mb-8" />
+              </Tooltip>
+              <Tooltip text="Go">
+                <Icon name="logos:go" class="size-16 mb-8" />
+              </Tooltip>
             </div>
           </div>
         </div>
