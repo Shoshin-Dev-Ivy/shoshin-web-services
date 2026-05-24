@@ -89,66 +89,27 @@
       <Icon name="heroicons:code-bracket-16-solid" class="bg-orange-400 my-12 size-12 2xl:ml-24" />
       <h2 class="flex justify-left text-2xl font-black text-sky-700 dark:text-white my-14 ml-4">{{ $t("Skills") }}</h2>
     </div>
-      <div class="flex flex-col items-center md:mx-auto md:w-96 dark:bg-sky-100 rounded-2xl -mt-4">
-        <div class="flex">
-          <div class="flex flex-col items-center">
-            <p class="flex justify-center text-2xl text-orange-400 font-black mb-8 mt-4">{{ $t("Frontend") }}</p>
-            <div class="grid grid-cols-2 gap-y-10 gap-x-14 place-items-center">
-              <Icon name="logos:nuxt" class="size-18 my-4" />
-              <Tooltip text="TypeScript">
-                <Icon name="logos:typescript-icon" class="size-16" />
-              </Tooltip>
-              <Tooltip text="Tailwind.css">
-                <Icon name="skill-icons:tailwindcss-light" class="size-16" />
-              </Tooltip>
-              <Tooltip text="JavaScript">
-                 <Icon name="devicon:javascript" class="size-16" />
-              </Tooltip>
-              <Tooltip text="Angular">
-                 <Icon name="devicon:angular" class="size-16" />
-              </Tooltip>
-               <Tooltip text="Wordpress">
-                 <Icon name="devicon:wordpress" class="size-16" />
-              </Tooltip>
-            </div>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="flex flex-col items-center">
-            <p class="flex justify-center text-2xl text-orange-400 font-black my-8">{{ $t("Backend") }}</p>
-            <div class="grid grid-cols-2 gap-y-10 gap-x-14 place-items-center">
-              <Icon name="logos:nodejs" class="size-16" />
-              <Tooltip text="PostgreSQL">
-                 <Icon name="logos:postgresql" class="size-16" />
-              </Tooltip>
-              <Tooltip text="Python">
-                <Icon name="logos:python" class="size-16 mb-8" />
-              </Tooltip>
-              <Tooltip text="Django">
-                <Icon name="logos:django" class="size-16 mb-8" />
-              </Tooltip>
-              <Tooltip text="Symfony">
-                <Icon name="logos:symfony" class="size-16 mb-8" />
-              </Tooltip>
-              <Tooltip text="Php">
-                <Icon name="logos:php" class="size-16 mb-8" />
-              </Tooltip>
-              <Tooltip text="Docker">
-                <Icon name="logos:docker" class="size-16 mb-8" />
-              </Tooltip>
-              <Tooltip text="Nginx">
-                <Icon name="logos:nginx" class="size-16 mb-8" />
-              </Tooltip>
-              <Tooltip text="Prometheus">
-                <Icon name="logos:prometheus" class="size-16 mb-8" />
-              </Tooltip>
-              <Tooltip text="Go">
-                <Icon name="logos:go" class="size-16 mb-8" />
-              </Tooltip>
-            </div>
-          </div>
-        </div>
-    </div>
+     <SkillsCarousel
+    :title="$t('MainStackTitle')"
+    :description="$t('MainStackDescription')"
+    :skills="mainStack"
+    :speed="3500"
+    :reverse="false"
+    />
+    <SkillsCarousel
+    :title="$t('SecondaryStackTitle')"
+    :description="$t('SecondaryStackDescription')"
+    :skills="secondaryStack"
+    :speed="5000"
+    :reverse="true"
+    />
+    <SkillsCarousel
+    :title="$t('InfraTitle')"
+    :description="$t('InfraDescription')"
+    :skills="infraStack"
+    :speed="6500"
+    :reverse="false"
+    />
     <div>
       <div>
         <div>
@@ -273,9 +234,10 @@
           <h2 class="flex text-2xl font-black text-sky-700 dark:text-white my-14 ml-4">{{ $t("News")}}</h2>
         </div>
         <div class="flex flex-col text-center md:flex-col -mt-6">
-          <p class="ml-2 mb-2 text-black dark:text-white">{{ $t("NewLeMonsieur1") }}</p>
+          <p class="ml-2 mb-2 text-black font-black dark:text-white">{{ $t("NewLeMonsieur1") }}</p>
           <p class="ml-2 mb-2 text-black dark:text-white">{{ $t("NewLeMonsieur2") }}</p>
-          <p class="ml-2 mb-2 text-black dark:text-white">{{ $t("NewLeMonsieur3") }}</p>
+          <p class="ml-2 mb-2 text-black font-black dark:text-white">{{ $t("TitleCrm") }}</p>
+          <p class="ml-2 mb-2 text-black dark:text-white">{{ $t("ProjetCrm") }}</p>
         </div>
       </div>
       <template>
@@ -286,7 +248,7 @@
 </ClientOnly>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useHead } from '#imports'
 import ContactForm from '~/components/ContactForm.vue'
@@ -294,6 +256,7 @@ import ImageSwitcher from '~/components/ImageSwitcher.vue'
 import WelcomeMessage from '~/components/WelcomeMessage.vue'
 import DisplayTagline1 from '~/components/DisplayTagline1.vue'
 import DisplayTagline2 from '~/components/DisplayTagline2.vue'
+import { mainStack, secondaryStack, infraStack } from '~/data/skills'
 
 
 
@@ -335,7 +298,7 @@ useHead({
   script: [
     {
       type: 'application/ld+json',
-      children: JSON.stringify({
+      innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Shoshin Web Services",

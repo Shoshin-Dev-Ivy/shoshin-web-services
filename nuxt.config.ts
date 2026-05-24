@@ -42,7 +42,13 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ['~/assets/css/main.css'],
+  css: [
+    'swiper/css',
+    'swiper/css/effect-coverflow',
+    'swiper/css/navigation',
+    'swiper/css/pagination',
+    '~/assets/css/main.css',
+  ],
 
   modules: [
     '@nuxt/icon',

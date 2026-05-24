@@ -37,7 +37,7 @@
         :grab-cursor="true"
         class="projects-swiper py-10"
       >
-      <!-- Le Monsieur d'en Face -->
+      <!-- Crm immobilier -->
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
