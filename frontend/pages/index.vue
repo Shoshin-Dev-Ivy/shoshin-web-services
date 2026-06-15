@@ -315,6 +315,7 @@
 </template>
 
 <script setup lang="ts">
+import { useAdminAuth } from '~/composables/useAdminAuth'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useHead } from '#imports'
 import ContactForm from '~/components/ui/ContactForm.vue'
