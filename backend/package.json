@@ -1,0 +1,40 @@
+{
+  "name": "portfolio-backend",
+  "version": "1.0.0",
+  "description": "Backend sécurisé pour portfolio avec authentification JWT",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "generate-admin-hash": "node -e \"console.log('ADMIN_KEY_HASH=' + require('bcryptjs').hashSync(process.argv[1], 10))\"",
+    "generate-jwt-secret": "node -e \"console.log('JWT_SECRET=' + require('crypto').randomBytes(64).toString('hex'))\""
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "cookie-parser": "^1.4.6",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "nodemailer": "^6.9.7",
+    "sanitize-html": "^2.11.0",
+    "node-fetch": "^2.7.0",
+    "express-rate-limit": "^7.1.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/cookie-parser": "^1.4.6",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/pg": "^8.10.9",
+    "@types/nodemailer": "^6.4.14",
+    "@types/sanitize-html": "^2.9.5",
+    "@types/node-fetch": "^2.6.9",
+    "typescript": "^5.3.3",
+    "ts-node-dev": "^2.0.0"
+  }
+}
