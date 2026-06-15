@@ -23,44 +23,50 @@
                 <span class="h-0.5 rounded bg-sky-700 dark:bg-white w-full"></span> 
                 <span class="h-0.5 rounded bg-sky-700 dark:bg-white w-full"></span> 
                 </button> 
-                <div v-if="isMenuOpen"  class="flex flex-col pt-8 overflow-x-hidden">
-                    <NuxtLink class="relative group overflow-hidden 
-                    flex justify-center -mt-10 mb-2 text-orange-400 font-black hover:underline hover:underline-offset-8 py-2 dark:text-white text-2xl transition-transform transform hover:scale-105 duration-300" aria-label="Cliquez ici pour revenir sur la page d'accueil" 
-                    :to="{ path: localePath('/'), hash:'' }">{{ $t("Accueil") }}
-                    <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </NuxtLink> 
-                    <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black hover:underline dark:text-white text-2xl  hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300" aria-label="Cliquez ici pour accéder à la partie services" 
-                    :to="{ path: localePath('/'), hash:'#item-1' }">{{ $t("Services") }}
-                    <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </NuxtLink>
-                    <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300" aria-label="Cliquez ici pour accéder à la partie skills" 
-                    :to="{ path: localePath('/'), hash:'#item-2' }">{{ $t("Skills") }}
-                    <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </NuxtLink>
-                    <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300" aria-label="Cliquez ici pour accéder à la partie parcours" 
-                    :to="{ path: localePath('/'), hash:'#item-3' }">{{ $t("Parcours") }}
-                    <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </NuxtLink>
-                    <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300 md:flex-wrap" 
-                    aria-label="Cliquez ici pour accéder à la partie portfolio" 
-                    :to="{ path: localePath('/'), hash:'#item-4' }">{{ $t("Projets") }}
-                    <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </NuxtLink>
-                    <NuxtLink class="relative group overflow-hidden flex justify-center mb-10 text-orange-400 font-black dark:text-white text-2xl 
-                    hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300" 
-                    aria-label="Cliquez ici pour accéder à la partie contact" 
-                    :to="{ path: localePath('/'), hash:'#item-5' }">{{ $t("Contact") }}
-                    <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </NuxtLink>
-                    <div class="flex justify-center mb-16">
-                      <button v-if="adminStore.isAdmin" @click="toggleMaintenance"
-                        class="justify-items-center text-sky-700 text-xl xl:text-lg dark:text-white hover:bg-gradient-to-r from-orange-400 
-                        -mt-4 px-8 py-6 border-solid border-2 border-orange-400 hover:border-sky-700 dark:hover:border-white font-black rounded-xl animate-pulse focus:outline-none focus:ring-2 focus:ring-sky-700 focus:ring-offset-2">
-                        {{ enabled ? $t("Desactiver") : $t("Activer") }} {{ $t("MaintenanceToggle") }}
-                      </button>
-                    </div>
-                </div>
-            </div>        
+            <div v-if="isMenuOpen" class="flex flex-col pt-8 overflow-x-hidden gap-4">
+              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black hover:underline hover:underline-offset-8 py-2 dark:text-white text-2xl transition-transform transform hover:scale-105 duration-300"
+                aria-label="Cliquez ici pour revenir sur la page d'accueil"
+                :to="{ path: localePath('/'), hash:'' }">{{ $t("Accueil") }}
+                <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+              </NuxtLink>
+              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black hover:underline dark:text-white text-2xl hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
+                aria-label="Cliquez ici pour accéder à la partie services"
+                :to="{ path: localePath('/'), hash:'#item-1' }">{{ $t("Services") }}
+                <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+              </NuxtLink>
+              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
+                aria-label="Cliquez ici pour accéder à la partie skills"
+                :to="{ path: localePath('/'), hash:'#item-2' }">{{ $t("Skills") }}
+                <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+              </NuxtLink>
+              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
+                aria-label="Cliquez ici pour accéder à la partie parcours"
+                :to="{ path: localePath('/'), hash:'#item-3' }">{{ $t("Parcours") }}
+                <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+              </NuxtLink>
+              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
+                aria-label="Cliquez ici pour accéder à la partie portfolio"
+                :to="{ path: localePath('/'), hash:'#item-4' }">{{ $t("Projets") }}
+                <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+              </NuxtLink>
+              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
+                aria-label="Cliquez ici pour accéder à la partie contact"
+                :to="{ path: localePath('/'), hash:'#item-5' }">{{ $t("Contact") }}
+                <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+              </NuxtLink>
+              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
+                aria-label="Cliquez ici pour accéder à la partie news"
+                :to="{ path: localePath('/'), hash:'#item-6' }">{{ $t("News") }}
+                <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+              </NuxtLink>
+              <div class="flex justify-center mb-16">
+                <button v-if="adminStore.isAdmin" @click="toggleMaintenance"
+                  class="justify-items-center text-sky-700 text-xl xl:text-lg dark:text-white hover:bg-gradient-to-r from-orange-400 -mt-4 px-8 py-6 border-solid border-2 border-orange-400 hover:border-sky-700 dark:hover:border-white font-black rounded-xl animate-pulse focus:outline-none focus:ring-2 focus:ring-sky-700 focus:ring-offset-2">
+                  {{ enabled ? $t("Desactiver") : $t("Activer") }} {{ $t("MaintenanceToggle") }}
+                </button>
+              </div>
+            </div>
+          </div>
             <div class="hidden md:flex md:flex-wrap md:col-span-6 md:mx-auto md:justify-center md:items-center gap-x-6 gap-y-8 2xl:w-full 2xl:justify-center">
               <NuxtLink v-for="({ label, hash, aria }, index) in links" :key="index" :aria-label="aria" 
               :to="{ path: localePath('/'), hash }"
@@ -192,6 +198,7 @@ const links = [
   { label: 'Parcours', hash: '#item-3', aria: 'Cliquez ici pour accéder à la partie parcours' },
   { label: 'Projets', hash: '#item-4', aria: 'Cliquez ici pour accéder à la partie projets' },
   { label: 'Contact', hash: '#item-5', aria: 'Cliquez ici pour accéder à la partie contact' },
+  { label: 'News', hash: '#item-6', aria: 'Cliquez ici pour accéder à la partie news' },
 ]
 </script>
 

@@ -43,7 +43,7 @@
         <div
           class="flex flex-col items-center justify-center
                  h-40 p-6 rounded-2xl
-                 bg-white/60 dark:bg-sky-800/30
+                 bg-white/60 dark:bg-sky-800
                  backdrop-blur-sm
                  border border-sky-200/50 dark:border-sky-700/50
                  transition-all duration-300

@@ -30,11 +30,10 @@ import { useHead, useI18n } from '#imports'
 import { useCookieConsent } from '~/composables/useCookieConsent'
 
 // Composants
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
-import ScrollToTop from '~/components/ScrollToTop.vue'
-import CookieConsent from '~/components/CookieConsent.vue'
-import IosBanner from '~/components/IosBanner.vue'
+import Footer from '~/components/layout/Footer.vue'
+import ScrollToTop from '~/components/layout/ScrollToTop.vue'
+import CookieConsent from '~/components/ui/CookieConsent.vue'
+import IosBanner from '~/components/ui/IosBanner.vue'
 
 // Composants tiers
 import AnalyticsLoader from '~/components/ThirdParty/AnalyticsLoader.vue'

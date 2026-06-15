@@ -1,16 +1,10 @@
 <!-- components/ProjectsCarousel.vue -->
 <template>
   <div class="carousel-wrapper relative py-8 px-4 sm:px-6">
-
-    <!-- Titre de section -->
-    <div class="flex items-center mb-6 mt-10 sm:mt-12 md:mt-6 lg:mt-12 xl:mt-12 2xl:mt-4" id="item-4">
-      <Icon name="heroicons:code-bracket-16-solid" class="bg-orange-400 my-2 size-12 2xl:ml-24 shrink-0" />
-      <h2 class="text-2xl font-black text-sky-700 dark:text-white my-4 ml-4">{{ $t("Projets") }}</h2>
-    </div>
-
+    
     <div class="text-center mb-8">
-      <h3 class="text-xl">{{ $t("Aperçu1") }}</h3>
-      <h3 class="text-xl mt-2">{{ $t("Aperçu2") }}</h3>
+      <h3 class="text-2xl font-black text-orange-400">{{ $t("Aperçu1") }}</h3>
+      <h3 class="text-sky-700 dark:text-white text-xl mt-2">{{ $t("Aperçu2") }}</h3>
     </div>
 
     <!-- Carrousel -->
@@ -68,20 +62,24 @@
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
-              <img src="assets/images/Le_Monsieur d_en_Face.webp" alt="Aperçu de la page d'accueil Le Monsieur d'en Face"
+              <img src="assets/images/planB.webp" alt="Aperçu de la page d'accueil Le Monsieur d'en Face"
                 class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
             </figure>
             <div class="card-body p-5">
               <h2 class="card-title text-white dark:text-orange-400 text-lg font-black flex-wrap justify-center pb-14">
-                 Le Monsieur<span class="monsieur-break">d'en Face</span>
+                 {{ $t("Will1") }}
               </h2>
-              <p class="projet text-sm text-white/90">{{ $t("NewLeMonsieur2") }}</p>
+              <p class="projet text-sm text-white/90">{{ $t("Will2") }}</p>
+              <p class="projet text-sm text-white/90">{{ $t("Will3") }}</p>
+              <p class="projet text-sm text-white/90">{{ $t("Will4") }}</p>
               <p class="projet font-black text-base text-white/90">{{ $t("2026") }}</p>
               <div class="mt-3 space-y-1">
                 <p class="projet font-black text-orange-300 text-sm">{{ $t("Frontend") }}</p>
-                <p class="projet text-sm text-white/80">Nuxt.js · JavaScript · Tailwind.css</p>
+                <p class="projet text-sm text-white/80">Nuxt4.js · TypeScript · Tailwind.css</p>
                 <p class="projet font-black text-orange-300 text-sm mt-2">{{ $t("Backend") }}</p>
-                <p class="projet text-sm text-white/80">Node.js · Express.js · PostgreSQL · Neon</p>
+                <p class="projet text-sm text-white/80">PostgreSQL · Neon</p>
+                <p class="projet font-black text-orange-300 text-sm mt-2">{{ $t("GestionContenu") }}</p>
+                <p class="projet text-sm text-white/80">Directus</p>
               </div>
             </div>
           </div>

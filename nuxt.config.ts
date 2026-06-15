@@ -42,6 +42,13 @@ export default defineNuxtConfig({
     },
   },
 
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false
+    }
+  ],
+
   css: [
     'swiper/css',
     'swiper/css/effect-coverflow',

@@ -1,8 +1,14 @@
-<!-- components/DisplayTagline2.vue -->
+<!-- components/DisplayTagline.vue -->
 <template>
     <div v-if="localeReady" class="flex items-center justify-center z-50">
-        <div class="text-2xl text-sky-700 dark:text-white px-6 rounded-2xl animate-fade">
-            {{ $t("Tagline2") }}
+        <div class="text-2xl text-sky-700 dark:text-white px-6 rounded-2xl animate-fade text-center leading-snug">
+             <span class="block">
+                {{ $t("Tagline1") }}
+            </span>
+
+            <span class="block">
+                {{ $t("Tagline2") }}
+            </span>
         </div>
     </div>
 </template>
@@ -30,3 +36,4 @@ onMounted(() => {
 animation: fadeIn 10s ease-out forwards;
 }
 </style>
+  

@@ -13,7 +13,7 @@
                         </div>
                 </div>
                 <div class="flex justify-center mx-auto -mt-12">
-                        <h2 class="text-2xl text-orange-400 text-center font-black my-10">{{ $t("DevWeb") }}</h2>
+                        <h2 class="text-2xl text-orange-400 text-center font-black my-10">{{ $t("Titre") }}</h2>
                 </div>
 
                 <ul class="flex justify-center mx-auto -mt-1">
@@ -34,12 +34,12 @@
                         aria-label="Cliquez ici pour aller sur la page des mentions légales">
                         {{ $t("Mentions") }}
                         </NuxtLink>
-                        <p class="flex justify-center text-sky-700 dark:text-white mx-1">-</p>
+                        <p class="flex justify-center text-sky-700 dark:text-white mx-1"></p>
                         <NuxtLink :to="localePath('/section/confidentialite')" class="flex justify-center text-sky-700 dark:text-white hover:underline decoration-sky-700 dark:decoration-white underline-offset-4"
                         aria-label="Cliquez ici pour aller sur la page de confidentialité">
                         {{ $t("Confidentialite") }}
                         </NuxtLink>
-                        <p class="flex justify-center text-sky-700 dark:text-white mx-1">-</p>
+                        <p class="flex justify-center text-sky-700 dark:text-white mx-1"></p>
                         <button @click="handleCookieModal" class="flex justify-center text-sky-700 dark:text-white hover:underline decoration-sky-700 dark:decoration-white underline-offset-4"
                         aria-label="Modifier les préférences de cookies">
                                 {{ $t("GererCookies") }}
