@@ -58,11 +58,11 @@
           </div>
         </SwiperSlide>
 
-      <!-- Le Monsieur d'en Face -->
+      <!-- Will Gargani -->
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
-              <img src="assets/images/planB.webp" alt="Aperçu de la page d'accueil Le Monsieur d'en Face"
+              <img src="assets/images/planB.webp" alt="Aperçu de la page d'accueil Will Gargani"
                 class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
             </figure>
             <div class="card-body p-5">
@@ -75,7 +75,7 @@
               <p class="projet font-black text-base text-white/90">{{ $t("2026") }}</p>
               <div class="mt-3 space-y-1">
                 <p class="projet font-black text-orange-300 text-sm">{{ $t("Frontend") }}</p>
-                <p class="projet text-sm text-white/80">Nuxt4.js · TypeScript · Tailwind.css</p>
+                <p class="projet text-sm text-white/80">Nuxt.js · TypeScript · Tailwind.css</p>
                 <p class="projet font-black text-orange-300 text-sm mt-2">{{ $t("Backend") }}</p>
                 <p class="projet text-sm text-white/80">PostgreSQL · Neon</p>
                 <p class="projet font-black text-orange-300 text-sm mt-2">{{ $t("GestionContenu") }}</p>

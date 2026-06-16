@@ -1,5 +1,9 @@
 User-agent: *
+
 Disallow: /maintenance
+Disallow: /admin
+
 Allow: /
+
 
 Sitemap: https://shoshin-web-services.com/sitemap.xml

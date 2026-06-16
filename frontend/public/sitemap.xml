@@ -2,11 +2,10 @@
 <urlset 
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
   <!-- Page d'accueil -->
   <url>
     <loc>https://shoshin-web-services.com/</loc>
-    <lastmod>2025-02-14</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://shoshin-web-services.com/en/" />
@@ -14,7 +13,7 @@
   </url>
   <url>
     <loc>https://shoshin-web-services.com/en/</loc>
-    <lastmod>2025-02-14</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://shoshin-web-services.com/" />
@@ -22,13 +21,12 @@
   </url>
   <url>
     <loc>https://shoshin-web-services.com/ja/</loc>
-    <lastmod>2025-02-14</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://shoshin-web-services.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://shoshin-web-services.com/en/" />
   </url>
-
   <!-- Page Politique de confidentialité -->
   <url>
     <loc>https://shoshin-web-services.com/section/confidentialite</loc>
@@ -54,7 +52,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://shoshin-web-services.com/section/confidentialite" />
     <xhtml:link rel="alternate" hreflang="en" href="https://shoshin-web-services.com/en/section/confidentialite" />
   </url>
-  
   <!-- Page Mentions légales -->
   <url>
     <loc>https://shoshin-web-services.com/section/mentionslegales</loc>
