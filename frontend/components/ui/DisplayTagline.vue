@@ -9,6 +9,9 @@
             <span class="block">
                 {{ $t("Tagline2") }}
             </span>
+            <span class="block">
+                {{ $t("Tagline3") }}
+            </span>
         </div>
     </div>
 </template>

@@ -7,12 +7,17 @@
     <p class="mt-2 text-sky-700 dark:text-white">
       {{ description }}
     </p>
+
+    <p class="mt-2 text-sky-700 dark:text-white">
+      {{ precision }}
+    </p>
   </div>
 </template>
 
 <script setup>
 defineProps({
   title: String,
-  description: String
+  description: String,
+  precision: String,
 })
 </script>

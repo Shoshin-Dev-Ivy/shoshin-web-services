@@ -75,6 +75,9 @@
         <DisplayTagline />
       </div>
     </div>
+
+    <TrustBlock />
+
     <div class="flex" id="item-1">
       <Icon name="heroicons:code-bracket-16-solid" class="bg-orange-400 my-12 size-12 2xl:ml-24" />
       <h2 class="flex justify-left text-2xl font-black text-sky-700 dark:text-white my-14 ml-4">
@@ -104,22 +107,22 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 mb-20 items-stretch">
       <div class="h-full" v-slide-in="0">
-        <SkillCard :title="$t('Skill1Title')" :description="$t('Skill1Description')" />
+        <SkillCard :title="$t('Skill1Title')" :description="$t('Skill1Description')" :precision="$t('Skill1precision')" />
       </div>
       <div class="h-full" v-slide-in="150">
-        <SkillCard :title="$t('Skill2Title')" :description="$t('Skill2Description')" />
+        <SkillCard :title="$t('Skill2Title')" :description="$t('Skill2Description')" :precision="$t('Skill2precision')" />
       </div>
       <div class="h-full" v-slide-in="300">
-        <SkillCard :title="$t('Skill3Title')" :description="$t('Skill3Description')" />
+        <SkillCard :title="$t('Skill3Title')" :description="$t('Skill3Description')" :precision="$t('Skill3precision')" />
       </div>
       <div class="h-full" v-slide-in="0">
-        <SkillCard :title="$t('Skill4Title')" :description="$t('Skill4Description')" />
+        <SkillCard :title="$t('Skill4Title')" :description="$t('Skill4Description')" :precision="$t('Skill4precision')" />
       </div>
       <div class="h-full" v-slide-in="150">
-        <SkillCard :title="$t('Skill5Title')" :description="$t('Skill5Description')" />
+        <SkillCard :title="$t('Skill5Title')" :description="$t('Skill5Description')" :precision="$t('Skill5precision')" />
       </div>
       <div class="h-full" v-slide-in="300">
-        <SkillCard :title="$t('Skill6Title')" :description="$t('Skill6Description')" />
+        <SkillCard :title="$t('Skill6Title')" :description="$t('Skill6Description')" :precision="$t('Skill6precision')" />
       </div>
   </div>
      <SkillsCarousel
@@ -150,6 +153,14 @@
             <div class="flex items-start">
               <Icon name="heroicons:code-bracket-16-solid" class="bg-orange-400 my-12 size-12 2xl:ml-24" />
               <h2 class="parcours-title text-2xl font-black text-sky-700 dark:text-white my-14 ml-4">{{ $t("Parcours") }}</h2>
+            </div>
+            <div class="max-w-2xl mx-auto px-6 mb-16 text-center">
+              <p class="text-center text-xl text-sky-700 dark:text-white">
+                {{ $t("IntroParcours1") }}
+              </p>
+              <p class="text-center text-xl text-sky-700 dark:text-white">
+                {{ $t("IntroParcours2") }}
+              </p>
             </div>
             <ul class="parcours-ul timeline-content timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
               <li class="parcours-li timeline-item">
@@ -286,11 +297,11 @@
         <p class="mt-4 text-xl text-sky-700 dark:text-white">
           {{ $t("ProofText1") }}
         </p>
-         <p class="mt-4 text-xl text-sky-700 dark:text-white">
-          {{ $t("ProofText2") }}
+        <p class="mt-4 text-xl text-sky-700 dark:text-white">
+          📍 {{ $t("ProofText2") }}
         </p>
       </div>
-
+      
       <ProofBlock />
 
       <ContactForm />

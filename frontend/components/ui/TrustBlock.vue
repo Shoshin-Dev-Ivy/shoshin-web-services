@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto px-6 mb-24 text-center">
+  <div class="max-w-4xl mx-auto px-6 mt-16 mb-6 text-center">
 
     <div v-slide-in="0" class="p-6 rounded-xl bg-white/60 dark:bg-sky-800 shadow">
 
@@ -8,28 +8,28 @@
 
         <div>
           <p class="font-black text-xl text-sky-700 dark:text-orange-400">
-            {{ $t("Proof1Title") }}
+            {{ $t("TrustTitle1") }}
           </p>
           <p class="text-base text-sky-700 dark:text-white">
-            {{ $t("Proof1Text") }}
+            {{ $t("TrustText1") }}
           </p>
         </div>
 
         <div>
           <p class="font-black text-xl text-sky-700 dark:text-orange-400">
-            {{ $t("Proof2Title") }}
+            {{ $t("TrustTitle2") }}
           </p>
           <p class="text-base text-sky-700 dark:text-white">
-            {{ $t("Proof2Text") }}
+            {{ $t("TrustText2") }}
           </p>
         </div>
 
         <div>
           <p class="font-black text-xl text-sky-700 dark:text-orange-400">
-            {{ $t("Proof3Title") }}
+            {{ $t("TrustTitle3") }}
           </p>
           <p class="text-base text-sky-700 dark:text-white">
-            {{ $t("Proof3Text") }}
+            {{ $t("TrustText3") }}
           </p>
         </div>
 
