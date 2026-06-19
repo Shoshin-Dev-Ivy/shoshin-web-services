@@ -40,23 +40,18 @@
                 <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
               </NuxtLink>
               <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
-                aria-label="Cliquez ici pour accéder à la partie parcours"
-                :to="{ path: localePath('/'), hash:'#item-3' }">{{ $t("Parcours") }}
-                <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
-              </NuxtLink>
-              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
                 aria-label="Cliquez ici pour accéder à la partie portfolio"
-                :to="{ path: localePath('/'), hash:'#item-4' }">{{ $t("Projets") }}
+                :to="{ path: localePath('/'), hash:'#item-3' }">{{ $t("Projets") }}
                 <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
               </NuxtLink>
               <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
                 aria-label="Cliquez ici pour accéder à la partie contact"
-                :to="{ path: localePath('/'), hash:'#item-5' }">{{ $t("Contact") }}
+                :to="{ path: localePath('/'), hash:'#item-4' }">{{ $t("Contact") }}
                 <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
               </NuxtLink>
               <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
                 aria-label="Cliquez ici pour accéder à la partie news"
-                :to="{ path: localePath('/'), hash:'#item-6' }">{{ $t("News") }}
+                :to="{ path: localePath('/'), hash:'#item-5' }">{{ $t("News") }}
                 <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
               </NuxtLink>
               <div class="flex justify-center mb-16">
@@ -195,10 +190,9 @@ const links = [
   { label: 'Accueil', hash: '', aria: 'Cliquez ici pour revenir sur la page d\'accueil' },
   { label: 'Services', hash: '#item-1', aria: 'Cliquez ici pour accéder à la partie services' },
   { label: 'Skills', hash: '#item-2', aria: 'Cliquez ici pour accéder à la partie skills' },
-  { label: 'Parcours', hash: '#item-3', aria: 'Cliquez ici pour accéder à la partie parcours' },
-  { label: 'Projets', hash: '#item-4', aria: 'Cliquez ici pour accéder à la partie projets' },
-  { label: 'Contact', hash: '#item-5', aria: 'Cliquez ici pour accéder à la partie contact' },
-  { label: 'News', hash: '#item-6', aria: 'Cliquez ici pour accéder à la partie news' },
+  { label: 'Projets', hash: '#item-3', aria: 'Cliquez ici pour accéder à la partie projets' },
+  { label: 'Contact', hash: '#item-4', aria: 'Cliquez ici pour accéder à la partie contact' },
+  { label: 'News', hash: '#item-5', aria: 'Cliquez ici pour accéder à la partie news' },
 ]
 </script>
 
