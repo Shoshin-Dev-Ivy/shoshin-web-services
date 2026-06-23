@@ -24,7 +24,7 @@
                 <span class="h-0.5 rounded bg-sky-700 dark:bg-white w-full"></span> 
                 </button> 
             <div v-if="isMenuOpen" class="flex flex-col pt-8 overflow-x-hidden gap-4">
-              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black hover:underline hover:underline-offset-8 py-2 dark:text-white text-2xl transition-transform transform hover:scale-105 duration-300"
+            <NuxtLink class="relative group overflow-hidden flex -mt-10 justify-center text-orange-400 font-black hover:underline hover:underline-offset-8 py-2 dark:text-white text-2xl transition-transform transform hover:scale-105 duration-300"
                 aria-label="Cliquez ici pour revenir sur la page d'accueil"
                 :to="{ path: localePath('/'), hash:'' }">{{ $t("Accueil") }}
                 <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
@@ -51,6 +51,11 @@
               </NuxtLink>
               <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
                 aria-label="Cliquez ici pour accéder à la partie news"
+                :to="{ path: localePath('/APropos') }">{{ $t("APropos") }}
+                <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+              </NuxtLink>
+              <NuxtLink class="relative group overflow-hidden flex justify-center text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 py-2 transition-transform transform hover:scale-105 duration-300"
+                aria-label="Cliquez ici pour accéder à la partie news"
                 :to="{ path: localePath('/'), hash:'#item-5' }">{{ $t("News") }}
                 <span class="absolute bottom-0 left-0 w-0 h-0 bg-orange-400 dark:bg-white transition-all duration-300 group-hover:w-full"></span>
               </NuxtLink>
@@ -63,8 +68,8 @@
             </div>
           </div>
             <div class="hidden md:flex md:flex-wrap md:col-span-6 md:mx-auto md:justify-center md:items-center gap-x-6 gap-y-8 2xl:w-full 2xl:justify-center">
-              <NuxtLink v-for="({ label, hash, aria }, index) in links" :key="index" :aria-label="aria" 
-              :to="{ path: localePath('/'), hash }"
+              <NuxtLink v-for="({ label, hash, path, aria }, index) in links" :key="index" :aria-label="aria" 
+              :to="path ? localePath(path) : { path: localePath('/'), hash }"
               :class="[ 'relative group overflow-hidden text-orange-400 font-black dark:text-white text-2xl hover:underline hover:underline-offset-8 mx-6 -mt-2 transition-transform transform hover:scale-105 duration-300',
               enabled ? 'pointer-events-none select-none' : '' ]">
               {{ $t(label) }}
@@ -192,6 +197,7 @@ const links = [
   { label: 'Skills', hash: '#item-2', aria: 'Cliquez ici pour accéder à la partie skills' },
   { label: 'Projets', hash: '#item-3', aria: 'Cliquez ici pour accéder à la partie projets' },
   { label: 'Contact', hash: '#item-4', aria: 'Cliquez ici pour accéder à la partie contact' },
+  { label: 'APropos', path: '/APropos', aria: 'Cliquez ici pour accéder à la partie à propos' },
   { label: 'News', hash: '#item-5', aria: 'Cliquez ici pour accéder à la partie news' },
 ]
 </script>
