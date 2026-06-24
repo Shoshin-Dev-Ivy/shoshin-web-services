@@ -70,9 +70,6 @@
                     <p class="text-lg text-sky-700 dark:text-white leading-relaxed">
                         {{ $t("AProposParcours7") }}
                     </p>
-                    <p class="text-lg text-sky-700 dark:text-white leading-relaxed">
-                        {{ $t("AProposParcours8") }}
-                    </p>
                  </div>
 
                 <!-- Shoshin / fil rouge -->
