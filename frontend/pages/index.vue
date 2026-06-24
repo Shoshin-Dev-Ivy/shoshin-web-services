@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Meta description pour SEO avec localisation -->
-  <meta name="description" content="Services web de qualité à Carcassonne (Occitanie). Conception de solutions numériques sur mesure pour entreprises et organisations. Pierre Tinard, développeur applications web métiers freelance. - Python, TypeScript, Nuxt.js" />
+  <meta name="description" content="Pierre Tinard, développeur d'applications web métier à Carcassonne (Occitanie). Conception de solutions numériques sur mesure pour PME, startups et porteurs de projets innovants — là où les solutions standard s'arrêtent." />
 
   <!-- Localisation géographique pour SEO -->
   <meta name="geo.region" content="FR-11" />
@@ -15,13 +15,13 @@
   <meta name="ICBM" content="43.2130, 2.3491" />
 
   <!-- Keywords avec localisation -->
-  <meta name="keywords" content="développeur web Carcassonne, services web Occitanie, freelance Aude, Shoshin Web Services, Python, TypeScript, Nuxt.js, conception de solutions numériques sur mesure pour entreprises et organisations, Pierre Tinard" />
+  <meta name="keywords" content="développeur web Carcassonne, applications web métier, solutions numériques sur mesure, PME startups, freelance Aude, Shoshin Web Services, Python, TypeScript, Nuxt.js, Pierre Tinard" />
 
   <!-- Open Graph Meta Tags (Facebook, LinkedIn, WhatsApp) -->
-  <meta property="og:title" content="Shoshin Web Services - Développeur Web à Carcassonne" />
-  <meta property="og:description" content="Services web de qualité à Carcassonne (Occitanie). Développement web, Python, TypeScript, Nuxt.js - Conception de solutions numériques sur mesure pour entreprises et organisations." />
+  <meta property="og:title" content="Shoshin Web Services — Applications web métier sur mesure" />
+  <meta property="og:description" content="Conception de solutions numériques sur mesure pour PME, startups et porteurs de projets innovants. Là où les solutions standard s'arrêtent. Pierre Tinard, développeur freelance à Carcassonne." />
   <meta property="og:author" content="Pierre Tinard" />
-  <meta property="og:image" content="https://www.shoshin-web-services.com/images/HomeSWS.webp" />
+  <meta property="og:image" content="https://www.shoshin-web-services.com/images/homeSWS.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://www.shoshin-web-services.com" />
@@ -33,9 +33,9 @@
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Shoshin Web Services - Développeur Web à Carcassonne" />
-  <meta name="twitter:description" content="Services web de qualité à Carcassonne (Occitanie). Développement web, conception de solutions numériques sur mesure pour entreprises et organisations - Python, TypeScript, Nuxt.js" />
-  <meta name="twitter:image" content="https://www.shoshin-web-services.com/images/HomeSWS.webp" />
+  <meta name="twitter:title" content="Shoshin Web Services — Applications web métier sur mesure" />
+  <meta name="twitter:description" content="Conception de solutions numériques sur mesure pour PME, startups et porteurs de projets innovants. Là où les solutions standard s'arrêtent. Pierre Tinard, développeur freelance à Carcassonne." />
+  <meta name="twitter:image" content="https://www.shoshin-web-services.com/images/homeSWS.webp" />
   <meta name="twitter:url" content="https://www.shoshin-web-services.com" />
 
   <!-- Canonical URL -->
@@ -251,14 +251,14 @@ onBeforeUnmount(() => {
 })
 
 useHead({
-  title: 'Shoshin Web Services',
+  title: 'Shoshin Web Services — Applications web métier sur mesure',
 
   meta: [
-    { name: 'description', content: 'Des services web de qualité avec des solutions évolutives.' },
+    { name: 'description', content: 'Pierre Tinard, développeur d\'applications web métier à Carcassonne. Conception de solutions numériques sur mesure pour PME, startups et porteurs de projets innovants.' },
     { name: 'author', content: 'Pierre Tinard' },
     {
       name: 'keywords',
-      content: 'Shoshin Web Services, portfolio, services web, développement web, freelance, backend, Python, Nuxt, Pierre Tinard',
+      content: 'applications web métier, solutions numériques sur mesure, développeur web Carcassonne, PME startups, freelance Aude, Python, Nuxt.js, TypeScript, Pierre Tinard',
     }
   ],
 

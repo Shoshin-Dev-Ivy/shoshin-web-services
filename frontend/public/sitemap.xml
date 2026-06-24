@@ -27,6 +27,31 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://shoshin-web-services.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://shoshin-web-services.com/en/" />
   </url>
+  <!-- Page À propos -->
+  <url>
+    <loc>https://shoshin-web-services.com/APropos</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shoshin-web-services.com/en/APropos" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shoshin-web-services.com/ja/APropos" />
+  </url>
+  <url>
+    <loc>https://shoshin-web-services.com/en/APropos</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://shoshin-web-services.com/APropos" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shoshin-web-services.com/ja/APropos" />
+  </url>
+  <url>
+    <loc>https://shoshin-web-services.com/ja/APropos</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://shoshin-web-services.com/APropos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://shoshin-web-services.com/en/APropos" />
+  </url>
   <!-- Page Politique de confidentialité -->
   <url>
     <loc>https://shoshin-web-services.com/section/confidentialite</loc>

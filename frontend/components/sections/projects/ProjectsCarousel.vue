@@ -62,7 +62,7 @@
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
-              <img src="assets/images/planB.webp" alt="Aperçu de la page d'accueil Will Gargani"
+              <img src="assets/images/HomeWilliamGargani.webp" alt="Aperçu de la page d'accueil Will Gargani"
                 class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
             </figure>
             <div class="card-body p-5">
@@ -135,7 +135,7 @@
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
-              <img src="assets/images/homeGroupomania.webp" alt="Aperçu de la page d'accueil Groupomania"
+              <img src="assets/images/HomeGroupomania.webp" alt="Aperçu de la page d'accueil Groupomania"
                 class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
             </figure>
             <div class="card-body p-5">
@@ -158,7 +158,7 @@
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
-              <img src="assets/images/homeHotTakes.webp" alt="Aperçu de la page d'accueil Hot Takes"
+              <img src="assets/images/HomeHotTakes.webp" alt="Aperçu de la page d'accueil Hot Takes"
                 class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
             </figure>
             <div class="card-body p-5">
@@ -181,7 +181,7 @@
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
-              <img src="assets/images/homeKanap.webp" alt="Aperçu de la page d'accueil Kanap"
+              <img src="assets/images/HomeKanap.webp" alt="Aperçu de la page d'accueil Kanap"
                 class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
             </figure>
             <div class="card-body p-5">
@@ -202,7 +202,7 @@
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
-              <img src="assets/images/homeLaChouetteAgence.webp" alt="Aperçu de la page d'accueil La Chouette Agence"
+              <img src="assets/images/HomeLaChouetteAgence.webp" alt="Aperçu de la page d'accueil La Chouette Agence"
                 class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
             </figure>
             <div class="card-body p-5">
@@ -222,7 +222,7 @@
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
-              <img src="assets/images/homeOhmyfood.webp" alt="Aperçu de la page d'accueil Ohmyfood"
+              <img src="assets/images/HomeOhmyfood.webp" alt="Aperçu de la page d'accueil Ohmyfood"
                 class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
             </figure>
             <div class="card-body p-5">
@@ -242,7 +242,7 @@
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
-              <img src="assets/images/homeReservia.webp" alt="Aperçu de la page d'accueil Reservia"
+              <img src="assets/images/HomeReservia.webp" alt="Aperçu de la page d'accueil Reservia"
                 class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
             </figure>
             <div class="card-body p-5">
