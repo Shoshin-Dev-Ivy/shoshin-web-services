@@ -31,7 +31,7 @@
         :grab-cursor="true"
         class="projects-swiper py-10"
       >
-      <!-- Crm immobilier -->
+      <!-- Crm immobilier Angular / Nest.js -->
         <SwiperSlide class="project-slide">
           <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
             <figure class="h-48 overflow-hidden">
@@ -40,7 +40,34 @@
             </figure>
             <div class="card-body p-5">
               <h2 class="card-title text-white dark:text-orange-400 text-lg font-black flex-wrap justify-center pb-14">
-                 Crm immobilier
+                 {{ $t("TitleCrm") }}
+              </h2>
+              <p class="projet text-sm text-white/90">{{ $t("ProjetCrm2") }}</p>
+              <p class="projet font-black text-base text-white/90">{{ $t("2026") }}</p>
+              <div class="mt-3 space-y-1">
+                <p class="projet font-black text-orange-300 text-sm">{{ $t("Infra") }}</p>
+                <p class="projet text-sm text-white/80">Docker · Nginx</p>
+                <p class="projet font-black text-orange-300 text-sm">{{ $t("Frontend") }}</p>
+                <p class="projet text-sm text-white/80">Angular</p>
+                <p class="projet font-black text-orange-300 text-sm mt-2">{{ $t("Backend") }}</p>
+                <p class="projet text-sm text-white/80">NestJS · TypeScript · PostgreSQL</p>
+                <p class="projet font-black text-orange-300 text-sm">{{ $t("Monitoring") }}</p>
+                <p class="projet text-sm text-white/80">Prometheus · Grafana</p>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+      <!-- Crm immobilier Angular / Symfony -->
+        <SwiperSlide class="project-slide">
+          <div class="card bg-sky-600 dark:bg-sky-800 shadow-2xl overflow-hidden h-full">
+            <figure class="h-48 overflow-hidden">
+              <img src="assets/images/CrmImmo.webp" alt="Aperçu du tableau de bord CRM IMMO"
+                class="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
+            </figure>
+            <div class="card-body p-5">
+              <h2 class="card-title text-white dark:text-orange-400 text-lg font-black flex-wrap justify-center pb-14">
+                 {{ $t("TitleCrm") }}
               </h2>
               <p class="projet text-sm text-white/90">{{ $t("ProjetCrm") }}</p>
               <p class="projet font-black text-base text-white/90">{{ $t("2026") }}</p>
@@ -51,8 +78,8 @@
                 <p class="projet text-sm text-white/80">Angular</p>
                 <p class="projet font-black text-orange-300 text-sm mt-2">{{ $t("Backend") }}</p>
                 <p class="projet text-sm text-white/80">Symfony · PostgreSQL</p>
-                <p class="projet font-black text-orange-300 text-sm">{{ $t("Prometheus") }}</p>
-                <p class="projet text-sm text-white/80">Prometheus</p>
+                <p class="projet font-black text-orange-300 text-sm">{{ $t("Monitoring") }}</p>
+                <p class="projet text-sm text-white/80">Prometheus · Grafana</p>
               </div>
             </div>
           </div>
@@ -97,6 +124,7 @@
                 {{ $t("KZEN") }}
               </h2>
               <p class="projet text-sm text-white/90">{{ $t("ProjetKZEN") }}</p>
+              <p class="projet text-sm text-white/90">{{ $t("ProjetKZEN2") }}</p>
               <p class="projet font-black text-base text-white/90">{{ $t("2025") }} - {{ $t("2026") }}</p>
               <div class="mt-3 space-y-1">
                 <p class="projet font-black text-orange-300 text-sm">{{ $t("Frontend") }}</p>
