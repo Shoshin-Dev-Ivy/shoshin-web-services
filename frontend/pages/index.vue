@@ -121,9 +121,6 @@
       <div class="h-full" v-slide-in="150">
         <SkillCard :title="$t('Skill5Title')" :description="$t('Skill5Description')" :precision="$t('Skill5precision')" />
       </div>
-      <div class="h-full" v-slide-in="300">
-        <SkillCard :title="$t('Skill6Title')" :description="$t('Skill6Description')" :precision="$t('Skill6precision')" />
-      </div>
   </div>
      <SkillsCarousel
     :title="$t('MainStackTitle')"
